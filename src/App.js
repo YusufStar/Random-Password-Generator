@@ -119,9 +119,9 @@ function App() {
 
         <div className="page__toggle">
           <label className="toggle">
-            <input className={`toggle__input`} type="checkbox"/>
+            <input className={`toggle__input`} type="checkbox" onChange={(e) => setUppercase(e.target.checked)}/>
             <span className="toggle__label">
-              <span className={`${blackTheme ? "text-white":"text-black"} toggle__text outline-none`} onClick={() => setUppercase(!uppercase)}>Uppercase</span>
+              <span className={`${blackTheme ? "text-white":"text-black"} toggle__text outline-none`}>Uppercase</span>
             </span>
           </label>
         </div>
@@ -130,25 +130,25 @@ function App() {
           <label className="toggle">
             <input className={`toggle__input`} type="checkbox" disabled checked/>
             <span className="toggle__label">
-              <span className={`${blackTheme ? "text-white":"text-black"} toggle__text outline-none`} onClick={() => setLowercase(!lowercase)}>Lowercase</span>
+              <span className={`${blackTheme ? "text-white":"text-black"} toggle__text outline-none`}>Lowercase</span>
             </span>
           </label>
         </div>
 
         <div className="page__toggle">
           <label className="toggle">
-            <input className={`toggle__input`} type="checkbox"/>
+            <input className={`toggle__input`} type="checkbox" onChange={(e) => setNumbers(e.target.checked)}/>
             <span className="toggle__label">
-              <span className={`${blackTheme ? "text-white":"text-black"} toggle__text outline-none`} onClick={() => setNumbers(!numbers)}>Numeric</span>
+              <span className={`${blackTheme ? "text-white":"text-black"} toggle__text outline-none`}>Numeric</span>
             </span>
           </label>
         </div>
 
         <div className="page__toggle">
           <label className="toggle">
-            <input className={`toggle__input`} type="checkbox"/>
+            <input className={`toggle__input`} type="checkbox" onChange={(e) => setSymbols(e.target.checked)}/>
             <span className="toggle__label">
-              <span className={`${blackTheme ? "text-white":"text-black"} toggle__text outline-none`} onClick={() => setSymbols(!symbols)}>Symbols</span>
+              <span className={`${blackTheme ? "text-white":"text-black"} toggle__text outline-none`}>Symbols</span>
             </span>
           </label>
         </div>
